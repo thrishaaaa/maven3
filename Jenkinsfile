@@ -2,10 +2,9 @@ pipeline{
  agent any
  tools{
     maven 'Maven'
- 
- 
+ }
  stages{
-   stage('checkout'){
+   stage('Csheckout'){
      steps{
        git branch : 'main',url:'https://github.com/thrishaaaa/maven3.git'
      }
@@ -32,7 +31,7 @@ pipeline{
   }
   failure{
   echo 'failed'
-  }
+  
  }
  }
 }
