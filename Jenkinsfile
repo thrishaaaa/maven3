@@ -10,12 +10,12 @@ pipeline{
        git branch : 'main',url:'https://github.com/thrishaaaa/maven3.git'
      }
    }
-   stage('build'){
+   stage('Build'){
      steps{
        sh 'mvn clean package'
      }
    }
-   stage('test'){
+   stage('Test'){
      steps{
        sh 'mvn test'
      }
